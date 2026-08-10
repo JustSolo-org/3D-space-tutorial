@@ -18,23 +18,18 @@ public class Blaster : MonoBehaviour
     }
     float _cooldown;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         if(CanFire && Input.GetMouseButton(0))
         {
-            fireProjectile(); 
+            FireProjectile(); 
         }
     }
 
-    void fireProjectile()
+    void FireProjectile()
     {
         _cooldown = _coolDownTime;
+        Instantiate(_projectilePrefab, _muzzle.position, transform.rotation);
     }
 }

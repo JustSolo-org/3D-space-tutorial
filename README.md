@@ -46,7 +46,7 @@ All credit for the original tutorial design and teaching goes to the creator. Th
 
 ## 🛠️ Built With
 
-- **Unity** (version: _fill in your editor version, e.g. 2022.3 LTS_)
+- **Unity 6000.4.8f1** 
 - **C#**
 - **Git LFS** for binary asset version control
 
@@ -71,10 +71,10 @@ All credit for the original tutorial design and teaching goes to the creator. Th
 
 > Updated as I move through the tutorial. Rename items to match actual video titles as I go.
 
-- [ ] Project setup & folder structure
-- [ ] Player ship model, movement & controls
-- [ ] Camera setup / follow behavior
-- [ ] Basic shooting / weapon system
+- [x] Project setup & folder structure
+- [x] Player ship model, movement & controls
+- [x] Camera setup / follow behavior
+- [x] Basic shooting / weapon system
 - [ ] Enemy ship spawning
 - [ ] Enemy AI & collision avoidance
 - [ ] Health / damage system
@@ -91,7 +91,7 @@ All credit for the original tutorial design and teaching goes to the creator. Th
 
 ## ✨ Added Beyond the Tutorial
 
-> List any features/changes you make that go beyond what's taught in the series.
+> List any features/changes that go beyond what's taught in the series.
 
 - _(e.g. added power-ups, added a boss enemy, changed control scheme, etc.)_
 
@@ -103,6 +103,10 @@ Rough log of major milestones — mirrors the commit history.
 
 ### [Unreleased]
 - Initial project setup with Git LFS configured
+
+### [Alpha 0.1]
+- Implemented weapons system (Blaster) for the player, added projectile with basic emission and trail , 
+   **Bug Found** - the gun pushed the entire spaceship back (unintentional recoil)
 
 ---
 
