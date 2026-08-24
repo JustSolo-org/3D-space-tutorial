@@ -1,5 +1,6 @@
 ﻿<Solution>
   <Project Path="MerryYellow.CodeAssist.Editor.csproj" />
+  <Project Path="Detonator.csproj" />
   <Project Path="NewAssembly.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
 </Solution>

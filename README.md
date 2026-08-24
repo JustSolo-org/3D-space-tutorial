@@ -75,6 +75,7 @@ All credit for the original tutorial design and teaching goes to the creator. Th
 - [x] Player ship model, movement & controls
 - [x] Camera setup / follow behavior
 - [x] Basic shooting / weapon system
+- [-] Basic astroid /explosion
 - [ ] Enemy ship spawning
 - [ ] Enemy AI & collision avoidance
 - [ ] Health / damage system
@@ -108,6 +109,9 @@ Rough log of major milestones — mirrors the commit history.
 - Implemented weapons system (Blaster) for the player, added projectile with basic emission and trail , 
    **Bug Found** - the gun pushed the entire spaceship back (unintentional recoil)
 
+## [Alpha 0.1.1]
+- Implemented weapons system (Blaster) for the player, added projectile with basic emission and trail , 
+   **Bug fixed** - the gun pushed the entire spaceship back (unintentional recoil) colition between the ship and projectile fixed by seperating the on diffrent layers 
 ---
 
 ## 📄 License
