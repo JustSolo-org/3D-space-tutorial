@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3953834367250128154}
   - component: {fileID: 4296445348238107956}
   - component: {fileID: 1925654532943714008}
-  - component: {fileID: 146059162728687728}
   m_Layer: 11
   m_Name: Rock1
   m_TagString: Untagged
@@ -171,40 +170,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 3DSpaceShooter::asteroid
   _fracturedAsteroidPrefab: {fileID: -5350369431412734222, guid: 3b1d76162dc64e64a86a8809b0ec01d1, type: 3}
   _explosionPrefab: {fileID: 5794246706194965679, guid: a41f658828419324fa5b6ce70fe1e612, type: 3}
---- !u!114 &146059162728687728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219863300401843092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4007f1233a9b74fa9be42583fafba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Detonator::Detonator
-  size: 10
-  color: {r: 1, g: 0.423, b: 0, a: 0.5}
-  explodeOnStart: 1
-  duration: 3
-  detail: 1
-  upwardsBias: 0
-  destroyTime: 7
-  useWorldSpace: 1
-  direction: {x: 0, y: 0, z: 0}
-  fireballAMaterial: {fileID: 0}
-  fireballBMaterial: {fileID: 0}
-  smokeAMaterial: {fileID: 0}
-  smokeBMaterial: {fileID: 0}
-  shockwaveMaterial: {fileID: 0}
-  sparksMaterial: {fileID: 0}
-  glowMaterial: {fileID: 0}
-  heatwaveMaterial: {fileID: 0}
-  autoCreateFireball: 1
-  autoCreateSparks: 1
-  autoCreateShockwave: 1
-  autoCreateSmoke: 1
-  autoCreateGlow: 1
-  autoCreateLight: 1
-  autoCreateForce: 1
-  autoCreateHeatwave: 0
