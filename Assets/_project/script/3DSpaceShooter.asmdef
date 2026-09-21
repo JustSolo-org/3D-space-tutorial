@@ -1,3 +1,6 @@
 {
-	"name": "NewAssembly"
+	"name": "3DSpaceShooter",
+	"references": [
+		"Detonator"
+	]
 }

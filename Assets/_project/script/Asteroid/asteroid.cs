@@ -1,12 +1,11 @@
-using System;
-using System.Security.Principal;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class asteroid : MonoBehaviour, IDamageable
 {
 
     [SerializeField] private FracturedAsteroid _fracturedAsteroidPrefab;
-    //[SerializeField] private Detonator _explosionPrefab;
+    [InlineEditor(InlineEditorObjectFieldModes.Boxed)][SerializeField] private Detonator _explosionPrefab;
 
     private Transform _transform;
 
@@ -28,10 +27,10 @@ public class asteroid : MonoBehaviour, IDamageable
             Instantiate(_fracturedAsteroidPrefab, _transform.position, _transform.rotation);
         }
 
-        //if (_explosionPrefab != null)
-        //{
-        //    Instantiate(_explosionPrefab, hitPosition, Quaternion.identity);
-        //}
+        if (_explosionPrefab != null)
+        {
+            Instantiate(_explosionPrefab, hitPosition, Quaternion.identity);
+        }
 
         Destroy(gameObject);
     }
