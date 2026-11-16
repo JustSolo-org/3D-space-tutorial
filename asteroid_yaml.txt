@@ -1,0 +1,64 @@
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: _asteroidPrefabs.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5219863300401843092, guid: 9077bd970844da24fbf992c090a56917, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 829862069003079374, guid: 074dc54702228a6438a69178eead6ed0, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 348038873700138510, guid: 679a7c0452fe98946a8961395a44da09, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2074585286450671364, guid: 85c8205423d3ab04ca0a4c4d87cfb3f3, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1106032293990328174, guid: d855a6f16ef8d614781b9cdf9eb9b8cf, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[5]'
+      value: 
+      objectReference: {fileID: 3207327476753181087, guid: c15c2fc8c560cdf4b966091298e9cacd, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[6]'
+      value: 
+      objectReference: {fileID: 6449365053323224699, guid: 411bd74138b02fb44a29ce9551707d1d, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[7]'
+      value: 
+      objectReference: {fileID: 5827472791208611979, guid: 38933c84d8bb63f4c81bd1059e1a2323, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[8]'
+      value: 
+      objectReference: {fileID: 3391574769490765461, guid: fc3df7d9a17c4ae43a19f630087d23c2, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[9]'
+      value: 
+      objectReference: {fileID: 3212822217905106696, guid: 9e9e37fb3c20dc24690d436567c0b0df, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[10]'
+      value: 
+      objectReference: {fileID: 3589316657955595337, guid: 1519a88414db91b4180fdb1aa06aa50d, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[11]'
+      value: 
+      objectReference: {fileID: 2288054449508586214, guid: 02f7b1d2dd5fb5741aa8bdc27d04caf0, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[12]'
+      value: 
+      objectReference: {fileID: 3197304097635422991, guid: 3d57cd5a833ba514aaff56cccb39e01d, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[13]'
+      value: 
+      objectReference: {fileID: 7502509230849727141, guid: cb105e922fd1eee4bb5c04e9ea290e41, type: 3}
+    - target: {fileID: 8968682044289767267, guid: 09aa51eed9fade84e985bffe8f279881, type: 3}
+      propertyPath: '_asteroidPrefabs.Array.data[14]'
+      value: 
+      objectReference: {fileID: 7497428207499797149, guid: 1b99b3bca83c1b343ae765005abbb2cb, type: 3}

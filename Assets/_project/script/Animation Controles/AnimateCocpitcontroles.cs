@@ -12,9 +12,6 @@ public class AnimateCocpitcontroles : MonoBehaviour
 
     [SerializeField] float _throttleRange = 35f;
 
-    [SerializeField] 
-    ShipMovementInput _movementInput;
-
     IMovementControls _movementControls;
     // Update is called once per frame
     void Update()

@@ -2,7 +2,7 @@
 - Project name: 3D space tutorial
 - Unity version: Unity 6000.6.0f1
 - Active game object:
-  - Name: Rock1
+  - Name: Engine1
   - Tag: Untagged
-  - Layer: Asteroid
+  - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

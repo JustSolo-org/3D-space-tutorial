@@ -348,6 +348,7 @@ MonoBehaviour:
   _launchForce: 10000
   _damage: 100
   _range: 5
+  _hitEffect: {fileID: 4213489129471947238, guid: f8103c78b8cde6245a7dc0a8bb26773d, type: 3}
 --- !u!1 &8421006895441723144
 GameObject:
   m_ObjectHideFlags: 0

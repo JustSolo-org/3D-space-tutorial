@@ -1,35 +1,51 @@
-using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class Blaster : MonoBehaviour
 {
+    [SerializeField] [Required] private Projectile _projectilePrefab;
+    [SerializeField] private Transform _muzzle;
 
-    [SerializeField] Projectile _projectilePrefab;
-    [SerializeField] Transform _muzzle;
-    [SerializeField] [Range(0f,10f)] float _coolDownTime = 0.25f;
+    private float _coolDownTime;
+    private int _launchForce;
+    private int _damage;
+    private float _duration;
+    private IWeaponControls _weaponInput;
+    private float _coolDown;
 
-    bool CanFire
+    private bool CanFire
     {
         get
         {
-            _cooldown -= Time.deltaTime;
-            return _cooldown <= 0f;
+            _coolDown -= Time.deltaTime;
+            return _coolDown <= 0f;
         }
     }
-    float _cooldown;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(CanFire && Input.GetMouseButton(0))
+        if (_weaponInput == null) return;
+        if (CanFire && _weaponInput.PrimaryFired)
         {
-            FireProjectile(); 
+            FireProjectile();
         }
     }
 
-    void FireProjectile()
+    public void Init(IWeaponControls weaponInput, float coolDown, int launchForce, float duration, int damage)
     {
-        _cooldown = _coolDownTime;
-        Instantiate(_projectilePrefab, _muzzle.position, transform.rotation);
+        _weaponInput = weaponInput;
+        _coolDownTime = coolDown;
+        _launchForce = launchForce;
+        _duration = duration;
+        _damage = damage;
+    }
+
+    private void FireProjectile()
+    {
+        _coolDown = _coolDownTime;
+        Projectile projectile = Instantiate(_projectilePrefab, _muzzle.position, transform.rotation);
+        projectile.gameObject.SetActive(false);
+        projectile.Init(_launchForce, _damage, _duration);
+        projectile.gameObject.SetActive(true);
     }
 }

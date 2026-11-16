@@ -9,7 +9,6 @@ public class ShipEngine : MonoBehaviour
     IMovementControls _shipMovementControls;
     Rigidbody _rigidbody;
     float _thrustForce;
-    float _thrustAmount = 0f;
 
     bool ThrusterEnable => !Mathf.Approximately(0f, _shipMovementControls.ThrustAmount);
 
@@ -21,18 +20,16 @@ public class ShipEngine : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!ThrusterEnable) { return; }
+        float thrustAmount = _shipMovementControls.ThrustAmount;
+        if (Mathf.Approximately(0f, thrustAmount)) { return; }
 
-        _rigidbody.AddForce(transform.forward * (_thrustForce * Time.fixedDeltaTime));
+        _rigidbody.AddForce(transform.forward * (_thrustForce * thrustAmount * Time.fixedDeltaTime));
     }
         
 
     void ActivateThrusters()
     {
         _thruster.SetActive(ThrusterEnable);
-        if (!ThrusterEnable) return;
-        _thrustAmount = _thrustForce * _shipMovementControls.ThrustAmount;
-
     }
 
     public void init (IMovementControls movementControls, Rigidbody rb,float thrustForce)
